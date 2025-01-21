@@ -85,21 +85,17 @@ st.subheader('Insira os times que jogarão:')
 
 Time_Mandante = st.selectbox(
     "Time Mandante:",
-    ("Freiburg", "Hertha", "Bielefeld", "Ein Frankfurt", "FC Koln",
-       "Hoffenheim", "Werder Bremen", "Stuttgart", "Union Berlin",
-       "Dortmund", "Bayern Munich", "Augsburg", "Leverkusen", "Mainz",
-       "Wolfsburg", "RB Leipzig", "M'gladbach", "Schalke 04",
-       "Fortuna Dusseldorf", "Paderborn", "Bochum", "Greuther Furth",
-       "Darmstadt", "Heidenheim", "St Pauli"), key="mandante")
+    ("Bayern Munich' 'Heidenheim' 'Leverkusen' 'Mainz' 'Dortmund' 'Wolfsburg'
+ 'Holstein Kiel' 'Hoffenheim' 'Ein Frankfurt' "M'gladbach" 'Freiburg'
+ 'Augsburg' 'Union Berlin' 'Bochum' 'St Pauli' 'Werder Bremen' 'Stuttgart'
+ 'RB Leipzig"), key="mandante")
 
 Time_Visitante = st.selectbox(
     "Time Visitante:",
-    ("Freiburg", "Hertha", "Bielefeld", "Ein Frankfurt", "FC Koln",
-       "Hoffenheim", "Werder Bremen", "Stuttgart", "Union Berlin",
-       "Dortmund", "Bayern Munich", "Augsburg", "Leverkusen", "Mainz",
-       "Wolfsburg", "RB Leipzig", "M'gladbach", "Schalke 04",
-       "Fortuna Dusseldorf", "Paderborn", "Bochum", "Greuther Furth",
-       "Darmstadt", "Heidenheim", "St Pauli"), key="visitante")
+    ("Bayern Munich' 'Heidenheim' 'Leverkusen' 'Mainz' 'Dortmund' 'Wolfsburg'
+ 'Holstein Kiel' 'Hoffenheim' 'Ein Frankfurt' "M'gladbach" 'Freiburg'
+ 'Augsburg' 'Union Berlin' 'Bochum' 'St Pauli' 'Werder Bremen' 'Stuttgart'
+ 'RB Leipzig"), key="visitante")
 
 Temporada = int(2025)
 
