@@ -85,17 +85,11 @@ st.subheader('Insira os times que jogarão:')
 
 Time_Mandante = st.selectbox(
     "Time Mandante:",
-    ("Bayern Munich", "Heidenheim", "Leverkusen", "Mainz", "Dortmund", "Wolfsburg",
- "Holstein Kiel", "Hoffenheim", "Ein Frankfurt", "M'gladbach", "Freiburg",
- "Augsburg", "Union Berlin", "Bochum", "St Pauli" "Werder Bremen", "Stuttgart",
- "RB Leipzig"), key="mandante")
+    ("times_mandantes = dados['Time_Mandante'].unique()"), key="mandante")
 
 Time_Visitante = st.selectbox(
     "Time Visitante:",
-    ("Bayern Munich", "Heidenheim", "Leverkusen", "Mainz", "Dortmund", "Wolfsburg",
- "Holstein Kiel", "Hoffenheim", "Ein Frankfurt", "M'gladbach", "Freiburg",
- "Augsburg", "Union Berlin", "Bochum", "St Pauli" "Werder Bremen", "Stuttgart",
- "RB Leipzig")
+    ("times_mandantes = dados['Time_Visitante'].unique()")
 
 Temporada = int(2025)
 
