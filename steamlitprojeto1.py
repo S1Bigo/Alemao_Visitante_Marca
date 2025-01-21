@@ -89,7 +89,7 @@ Time_Mandante = st.selectbox(
 
 Time_Visitante = st.selectbox(
     "Time Visitante:",
-    (dados['Time_Visitante'].unique())
+    (dados['Time_Visitante'].unique()), key="visitante")
 
 Temporada = int(2025)
 
