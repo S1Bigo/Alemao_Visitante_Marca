@@ -1,7 +1,7 @@
 import pandas as pd
 import streamlit as st
 import pickle
-
+import xgboost as xgb
 
 
 dados_consulta = pd.read_csv('https://www.football-data.co.uk/mmz4281/2425/D1.csv')
