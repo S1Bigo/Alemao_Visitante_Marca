@@ -85,11 +85,11 @@ st.subheader('Insira os times que jogarão:')
 
 Time_Mandante = st.selectbox(
     "Time Mandante:",
-    (dados['Time_Mandante'].unique()), key="mandante")
+    (dados_consulta['Time_Mandante'].unique()), key="mandante")
 
 Time_Visitante = st.selectbox(
     "Time Visitante:",
-    (dados['Time_Visitante'].unique()), key="visitante")
+    (dados_consulta['Time_Visitante'].unique()), key="visitante")
 
 Temporada = int(2025)
 
