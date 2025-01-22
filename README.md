@@ -36,13 +36,3 @@ O modelo utiliza **Regressão Logística** como base, para modelar a probabilida
 5. **Desenvolvimento da Interface no Streamlit**: Criação de uma aplicação interativa onde o usuário pode inserir dados e obter previsões.
 
 ---
-
-## Como Rodar o Projeto
-
-### Requisitos
-
-- Python 3.6+
-- Instalar as dependências com o pip:
-
-```bash
-pip install -r requirements.txt
