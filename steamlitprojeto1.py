@@ -60,10 +60,9 @@ colunas_para_remover = [
 ]
 dados_consulta = dados_consulta.drop(columns=colunas_para_remover)
 
-dados_consulta['marcou_no_jogo_passado_mandante(0=Nao)'] = dados_consulta.groupby(['Time_Mandante', 'Temporada'])['Gols_Mandante'].shift(1).apply(lambda x: 0 if x == 0 else 1)
-dados_consulta['marcou_no_jogo_passado_visitante(0=Nao)'] = dados_consulta.groupby(['Time_Visitante', 'Temporada'])['Gols_Visitante'].shift(1).apply(lambda x: 0 if x == 0 else 1)
-dados_consulta['sofreu_no_jogo_passado_mandante(0=Nao)'] = dados_consulta.groupby(['Time_Mandante', 'Temporada'])['Gols_Visitante'].shift(1).apply(lambda x: 0 if x == 0 else 1)
-dados_consulta['sofreu_no_jogo_passado_visitante(0=Nao)'] = dados_consulta.groupby(['Time_Visitante', 'Temporada'])['Gols_Mandante'].shift(1).apply(lambda x: 0 if x == 0 else 1)
+dados['Mandante_Marcou'] = dados['Gols_Mandante'].apply(lambda x: 0 if x == 0 else 1)
+dados['Visitante_Marcou'] = dados['Gols_Visitante'].apply(lambda x: 0 if x == 0 else 1)
+dados['Partidas_mais_de_2gols'] = ((dados['Gols_Mandante'] + dados['Gols_Visitante']) > 2).astype(int)
 
 
 with open('modelo_AlemaoVisitanteMarca.pkl', 'rb') as f:
