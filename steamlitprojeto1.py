@@ -74,10 +74,9 @@ with open('modelo_AlemaoVisitanteMarca.pkl', 'rb') as f:
 # Adicionando textos ao layout do Streamlit
 st.title('Previsão de Restultado de Futebol do Campeonato Alemão(Bundesliga)')
 
-st.caption('''Este projeto utiliza a biblioteca XGBoost para prever se em uma partida de futebol o time visitante marcará gol. O modelo
-           criado foi treinado com dados da temporada 2018/19 até a temporada 2024/25 e possui uma acurácia de geral de ... nos dados de teste.
-           O usuário pode inserir os times mandante e visitante os quais deseja a previsão, e o modelo gerará uma previsão que dirá
-           se o TIME VISITANTE MARCARÁ OU NÃO GOL. 0 = Não e 1 = Sim''')
+st.caption('''Este projeto utiliza a biblioteca XGBoost para prever se em uma partida de futebol da Bundesliga haverá mais de 2(dois) gols. O modelo
+           criado foi treinado com dados da temporada 2018/19 até a temporada 2024/25 e possui uma acurácia de geral de 70% nos dados de teste.
+           O usuário pode inserir os times mandante e visitante os quais deseja a previsão, e o modelo dirá o resultado previsto.''')
 
 st.subheader('Insira os times que jogarão:')
 
